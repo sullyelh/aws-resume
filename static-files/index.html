@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suleiman Elhassan's Resume</title>
+    <link rel="stylesheet" href="/static-files/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the counter is stored in local storage
+            let counter = localStorage.getItem("viewCounter");
+            if (!counter) {
+                // If the counter is not in local storage, initialize it to 0
+                counter = 0;
+            } else {
+                // If the counter is in local storage, parse it to integer
+                counter = parseInt(counter);
+            }
+
+            // Update the counter display
+            document.getElementById("viewCounter").innerText = counter;
+
+            // Increment the counter when the page is loaded
+            counter++;
+            document.getElementById("viewCounter").innerText = counter;
+
+            // Save the updated counter value to local storage
+            localStorage.setItem("viewCounter", counter);
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>Views: <span id="viewCounter">0</span></p>
+    </div>
+    <div class="container">
+        <h1>Suleiman Elhassan</h1>
+        <p>Hilliard, OH 43026 • sully.elhassan@gmail.com</p>
+
+        <div class="experience">
+            <h2>Relevant Experience</h2>
+
+            <div>
+                <p class="job-title">Lead Systems Administrator - Cash Devices</p>
+                <p><strong>J.P Morgan Chase</strong> - Columbus, Ohio</p>
+                <p class="dates">January 2024 - Present</p>
+                <ul>
+                    <li>Served as technical Point-of-Contact and Subject Matter Expert for the Cash Device team.</li>
+                    <li>Maintained a fleet of over 25,000 cash devices alongside vendors and Project Managers.</li>
+                    <li>Initiated and completed a documentation overhaul from Windows 7 to Windows 10.</li>
+                    <li>Worked with development and deployment teams to ensure efficient patching of devices.</li>
+                    <li>Created custom Windows Images utilizing automation tools such as HCP Packer.</li>
+                    <li>Performed on-call duties as needed for Priority One Incidents. </li>
+                    <li>Led project to deliver either read-only or write access to applications and databases for several teams in the Cash Device space.</li>
+                    <li>Led documentation and training efforts for projects.</li>
+                    <li>Delegated and performed project tasks such as Documentation, Training, Deployment, and Risk.</li>
+                    <li>Served as Subject Matter Expert for Cash Devices migrating to a serverless environment.</li>
+                    <li>Maintained Kubernetes Clusters using KubeCTL.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="job-title">Windows System Administrator</p>
+                <p><strong>J.P Morgan Chase</strong> - Columbus, Ohio</p>
+                <p class="dates">  January 2022 - January 2024</p>
+                <ul>
+                    <li>Performed Move, Add, Change, and Delete functions to assets within our AD Domain.</li>
+                    <li>Created and Deleted various AD Objects for company assets.</li>
+                    <li>Performed port unblocks on switches for Retail Branch devices.</li>
+                    <li>Trained new hires on technical processes within the team. </li>
+                    <li>Ran Cisco IOS commands on switches in order to gather information and perform actions on ports.  </li>
+                    <li>Performed packet analysis using Wireshark to troubleshoot network connectivity.</li>
+                    <li>Create new DHCP scopes for Windows Servers (2012).</li>
+                    <li>Developed PowerShell Scripts to automate the update/patch of production assets in our AD environment.</li>
+                    <li>Created internal toolings for various processes such as certification update/renewal and log generation using PowerShell. </li>
+                    <li>Created and tested Windows Server VMs using VSphere VM Templates. </li>
+                    <li>Monitored latency and usage statistics on a fleet of Windows Servers using SolarWinds.</li>
+                    <li>Ensured Network (Allow Lists) and Software (Windows Bitlocker) security configurations were working as intended and were compliant with company standards.
+                    </li>
+                </ul>
+            </div>
+            <div>	
+                <p class="job-title">IT Specialist - VoIP </p>
+                <p><strong>American Cargo Transportation</strong> - Columbus, Ohio</p>
+                <p class="dates">May 2019 - May 2021</p>
+                <ul>
+                    <li>Monitored, upgraded, and maintained Cisco Voice Infrastructure.</li>
+                    <li>Maintained and applied Cisco Finesse for web based telephony.</li>
+                    <li>Applied UCCX and Cisco Finesse for company telephony systems.
+                    </li>
+                    <li>Administered and deployed Cisco IP phones and conference phones across offices.</li>
+                    <li>Created extensions and configured route patterns, Cisco IP phones, device pools, partitions, locations, calling search spaces, routes lists, and hunt groups using CUCM.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="job-title">IT Helpdesk Technician	</p>
+                <p><strong>NSKCS Inc.</strong> - Columbus, Ohio</p>
+                <p class="dates"> February 2018 - January 2019
+                </p>
+                <ul>
+                    <li>Provided support for software and hardware including maintenance, updates, and upgrades.</li>
+                    <li>Rendered troubleshooting and issue resolution for phone systems.</li>
+                    <li>Ensured timely and secure workstation hardware and software upgrades.</li>
+                    <li>Hands-on experience with a large selection of Cisco equipment.</li>
+                    <li>Assisted in inventory maintenance of equipment and software licenses. </li>
+                    <li>Performed troubleshooting for Windows OS and software downloads for new on site equipment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <div>
+                <p class="job-title">PXE Booting via AWS</p>
+                <p><em>Personal Project</em></p>
+                <p class="dates">November 2023</p>
+                <ul>
+                    <li>Created an environment to deploy Windows OS via PXE using AWS Services.</li>
+                    <li>Configured and deployed S3, EC2, Lambda Functions, Kinesis (Data Streams, Firehose), and VPCs.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="job-title">Resume Deploy</p>
+                <p><em>Personal Project</em></p>
+                <p class="dates">February 2024</p>
+                <ul>
+                    <li>Deployed a Static Website through AWS.</li>
+                    <li>Created Lambda Functions using Python, custom DNS using R53, deployed CloudFront distribution, connected view counter to DynamoDB, configured API Gateway, deployed resources with Terraform.  </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Security: Patching, Vulnerability Scanning, Risk Mitigation, Vulnerability Identification.</li>
+                <li>Networking: LAN/WAN, TCP/UDP, DHCP, DNS, Cisco IOS, PXE.</li>
+                <li>Languages: Python, Bash, Powershell. </li>
+                <li>Cloud and Automation: AWS Suite, Kubernetes, Terraform, Ansible, SCCM, WDS.</li>
+                <li>Other Technologies: Git/GitHub, Wireshark, Microsoft Suite, SolarWinds, Windows Server. </li>
+            </ul>
+        </div>
+
+        <div class="education">
+            <h2>Education and Certification</h2>
+            <p>The Ohio State University, A.A. General Studies - 2019</p>
+            <p>Cisco CCNA - 2021</p>
+            <p>CompTIA Security+ - 2023</p>
+            <p>AWS Solutions Architect Associate (SAA-C03) - 2023</p>
+        </div>
+    </div>
+</body>
+</html>
