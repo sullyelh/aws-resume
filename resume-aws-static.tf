@@ -24,17 +24,6 @@ resource "aws_s3_bucket_website_configuration" "sullyelhcom" {
   }
 }
 
-#Loads the index and error files from my local machine
-resource "aws_s3_object" "provision_source_files" {
-  bucket = aws_s3_bucket.sullyelhcom.id
-
-  for_each = fileset("static-files/", "**/*.*")
-
-  key = each.value
-  source = "static-files/${each.value}"
-  content_type = each.value
-}
-
 #essentially unchecks the block-public-access settings on s3 bucket
 resource "aws_s3_bucket_public_access_block" "sullyelhcom" {
   bucket = aws_s3_bucket.sullyelhcom.id

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to increment view count
+  /*
+      // Function to increment view count
     function incrementViewCount() {
         // Retrieve the page ID from the query parameters
         const urlParams = new URLSearchParams(window.location.search);
@@ -29,3 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call incrementViewCount function when the page is loaded
     incrementViewCount();
 });
+
+*/
