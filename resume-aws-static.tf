@@ -31,7 +31,7 @@ resource "aws_s3_object" "provision_source_files" {
   for_each = fileset("static-files/", "**/*.*")
 
   key = each.value
-  source = "aws-resume/${each.value}"
+  source = "static-files/${each.value}"
   content_type = each.value
 }
 

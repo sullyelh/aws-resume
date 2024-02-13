@@ -5,30 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suleiman Elhassan's Resume</title>
     <link rel="stylesheet" href="/static-files/styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Check if the counter is stored in local storage
-            let counter = localStorage.getItem("viewCounter");
-            if (!counter) {
-                // If the counter is not in local storage, initialize it to 0
-                counter = 0;
-            } else {
-                // If the counter is in local storage, parse it to integer
-                counter = parseInt(counter);
-            }
-
-            // Update the counter display
-            document.getElementById("viewCounter").innerText = counter;
-
-            // Increment the counter when the page is loaded
-            counter++;
-            document.getElementById("viewCounter").innerText = counter;
-
-            // Save the updated counter value to local storage
-            localStorage.setItem("viewCounter", counter);
-        });
-    </script>
-    <script src="/static-files/js/js-dynamo-connect.js"></script>
+    <script src="/static-files/js/scripts.js"></script>
 </head>
 <body>
     <div>
